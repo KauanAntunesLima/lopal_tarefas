@@ -6,28 +6,38 @@ package br.dev.kauan.tarefas;
 	import java.io.FileReader;
 	import java.io.FileWriter;
 	import java.io.IOException;
+import java.util.UUID;
 
 import javax.swing.JLabel;
 
+import br.dev.kauan.tarefas.dao.FuncionarioDAO;
 import br.dev.kauan.tarefas.model.Funcionario;
+import br.dev.kauan.tarefas.ui.FrameFuncionario;
+import br.dev.kauan.tarefas.utils.Utils;
 
 	public class Main {
 
 		private static String path = "C:\\Users\\25132733\\tarefas.txt";
 
 		public static void main(String[] args) {
-
-			Funcionario funcionario1 = new Funcionario("Maria da Silva");
-			Funcionario funcionario2 = new Funcionario();
-			Funcionario funcionario3 = new Funcionario("Programador", "Ana Maria");
-			Funcionario funcionario4 = new Funcionario("Programador", "Pedro", 2);
 			
-			System.out.println(funcionario1);
-			System.out.println(funcionario2);
-			System.out.println(funcionario3);
-			System.out.println(funcionario4);
-             
-			JLabel x = new JLabel();
+			new FrameFuncionario();
+			//Funcionario f = new Funcionario();
+			 // f.setNome("Kauan Antunes");
+			//f.setCargo("programador Junior");
+			//f.setSalario(1989.73);
+			
+			//FuncionarioDAO dao = new FuncionarioDAO(f);
+			//dao.gravar();
+			
+			
+			UUID matriculaUUID = UUID.randomUUID();
+			String matricula = matriculaUUID.toString();
+			String matricula8 = matricula.substring(0, 8);
+			System.out.println(Utils.gerarUUID8());
+			System.out.println(matricula.toString());
+
+			
 		}
 
 		private static void gravarArquivo() {

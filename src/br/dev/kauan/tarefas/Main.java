@@ -6,6 +6,8 @@ package br.dev.kauan.tarefas;
 	import java.io.FileReader;
 	import java.io.FileWriter;
 	import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import javax.swing.JLabel;
@@ -13,6 +15,7 @@ import javax.swing.JLabel;
 import br.dev.kauan.tarefas.dao.FuncionarioDAO;
 import br.dev.kauan.tarefas.model.Funcionario;
 import br.dev.kauan.tarefas.ui.FrameFuncionario;
+import br.dev.kauan.tarefas.ui.FrameFuncionarioList;
 import br.dev.kauan.tarefas.utils.Utils;
 
 	public class Main {
@@ -21,7 +24,30 @@ import br.dev.kauan.tarefas.utils.Utils;
 
 		public static void main(String[] args) {
 			
-			new FrameFuncionario();
+			new FrameFuncionarioList();
+			
+//			List<String> frutas = new ArrayList<String>();
+//			frutas.add("banana");
+//			frutas.add("melancia");
+//			frutas.add("maçã");
+//			frutas.add("uva");
+//			frutas.add("ameixa");
+//			frutas.add("melão");
+//			
+//			System.out.println(frutas);
+			
+			//new FrameFuncionario();
+			
+//			FuncionarioDAO dao = new FuncionarioDAO();
+//			List<Funcionario> funcionarios = dao.listar();
+//			
+//			for(Funcionario f : funcionarios) {
+//				System.out.println(f.getNome());
+//				System.out.println(f.getCargo());
+//				System.out.println("-------------");
+//			}
+			
+			
 			//Funcionario f = new Funcionario();
 			 // f.setNome("Kauan Antunes");
 			//f.setCargo("programador Junior");
@@ -29,13 +55,6 @@ import br.dev.kauan.tarefas.utils.Utils;
 			
 			//FuncionarioDAO dao = new FuncionarioDAO(f);
 			//dao.gravar();
-			
-			
-			UUID matriculaUUID = UUID.randomUUID();
-			String matricula = matriculaUUID.toString();
-			String matricula8 = matricula.substring(0, 8);
-			System.out.println(Utils.gerarUUID8());
-			System.out.println(matricula.toString());
 
 			
 		}

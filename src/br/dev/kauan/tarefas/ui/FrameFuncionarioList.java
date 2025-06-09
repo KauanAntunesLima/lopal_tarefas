@@ -35,7 +35,7 @@ public class FrameFuncionarioList {
 	  
 	  JFrame tela = new JFrame();
 	  tela.setSize(500, 500);
-	  tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	  tela.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 	  tela.setLayout(null);
 	  tela.setLocationRelativeTo(null);
 	  tela.setTitle("Lista de Funcionarios");

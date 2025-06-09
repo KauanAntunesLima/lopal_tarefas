@@ -10,12 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import br.dev.kauan.tarefas.dao.FuncionarioDAO;
 import br.dev.kauan.tarefas.model.Funcionario;
 import br.dev.kauan.tarefas.ui.FrameFuncionario;
 import br.dev.kauan.tarefas.ui.FrameFuncionarioList;
+import br.dev.kauan.tarefas.ui.FrameGerenciadorTarefas;
 import br.dev.kauan.tarefas.utils.Utils;
 
 	public class Main {
@@ -23,8 +25,7 @@ import br.dev.kauan.tarefas.utils.Utils;
 		private static String path = "C:\\Users\\25132733\\tarefas.txt";
 
 		public static void main(String[] args) {
-			
-			new FrameFuncionarioList();
+			new FrameGerenciadorTarefas();
 			
 //			List<String> frutas = new ArrayList<String>();
 //			frutas.add("banana");

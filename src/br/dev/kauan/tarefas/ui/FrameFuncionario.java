@@ -107,7 +107,7 @@ public class FrameFuncionario {
 				
 				FuncionarioDAO dao = new FuncionarioDAO(f);
 				dao.gravar();
-				JOptionPane.showMessageDialog(tela, txtNome + "gravado com sucesso!", "Sucesso!", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(tela, txtNome.getText() + " gravado com sucesso!", "Sucesso!", JOptionPane.INFORMATION_MESSAGE);
 				limparFormulario();
 			}
 		});
